@@ -1,0 +1,9 @@
+05/10/26, 21:10 - Riya created group "Team Aagaz - SIH"
+05/10/26, 21:12 - Riya (Team Lead): Welcome Team Aagaz! We are registered for the Smart India Hackathon 2026 internal round 🎉
+08/10/26, 18:30 - Riya (Team Lead): SIH internal round PPT submission by Sunday 11:59 PM. Use the official template: https://sih.example.org/ppt-template
+08/10/26, 18:32 - Dev: on it
+08/10/26, 18:35 - Kabir: I'll do the architecture slide
+09/10/26, 12:00 - Riya (Team Lead): Internal hackathon demo round (offline) is on Thursday 10 AM in Lab 3.
+09/10/26, 12:01 - Dev: 🔥🔥
+10/10/26, 13:45 - Dr. Mehta (Mentor): The internal hackathon demo round has been rescheduled to Friday 2 PM in Lab 5. Please carry your laptops.
+10/10/26, 13:47 - Kabir: Noted, thanks ma'am

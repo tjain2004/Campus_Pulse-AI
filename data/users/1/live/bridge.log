@@ -1,0 +1,10 @@
+Simulated bridge connected. Select 'CSE Final Year (live demo)'.
+Traceback (most recent call last):
+  File "C:\Users\tjain\Downloads\CampusPulsee-AI\scripts\simulate_bridge.py", line 134, in <module>
+    main()
+  File "C:\Users\tjain\Downloads\CampusPulsee-AI\scripts\simulate_bridge.py", line 126, in main
+    print(f"\u2192 {sender}: {text}", flush=True)
+  File "C:\Users\tjain\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 0: character maps to <undefined>

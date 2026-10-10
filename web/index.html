@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CampusPulse AI — log in</title>
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("cp-theme"); } catch (e) {}
+      if (!t) t = window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      document.documentElement.setAttribute("data-theme", t);
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div class="auth">
+  <section class="auth-story" aria-label="What CampusPulse does">
+    <h1>Twelve groups. One notice you can trust.</h1>
+    <p>CampusPulse reads your class, placement, hackathon and fest WhatsApp groups, keeps the deadlines,
+      catches changes, and flags rumours before they reach you.</p>
+    <div class="chaos" aria-hidden="true">
+      <div class="b"><small>Karan in CSE Final Year</small>ok 👍</div>
+      <div class="b"><small>Aditya in CSE Final Year</small>I heard mid-sem is postponed??</div>
+      <div class="b"><small>Fest Coordinator in Fest Updates</small>briefing moved to Wed 5 PM</div>
+      <div class="b"><small>Priya in Hackathon Team</small>thanks 🙏🙏</div>
+      <div class="b"><small>Forwarded in CSE Final Year</small>Infosys internship closes Oct 12…</div>
+      <div class="clean">
+        <strong>Infosys internship: apply by Thu 15 Oct, 11:59 PM</strong><br>
+        <span class="small muted">Deadline extended by the Placement Coordinator. Also posted in CSE Final Year.</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="auth-form">
+    <button class="btn ghost small theme-corner" id="theme-btn" type="button">Dark mode</button>
+    <form id="auth-form" novalidate>
+      <div class="tabs" role="tablist">
+        <button type="button" role="tab" id="tab-login" aria-selected="true">Log in</button>
+        <button type="button" role="tab" id="tab-register" aria-selected="false">Create account</button>
+      </div>
+      <h2 id="form-title" style="margin-bottom:1rem">Welcome back</h2>
+      <label class="field hidden" id="name-field"><span>Your name</span>
+        <input type="text" name="name" autocomplete="name" maxlength="60"></label>
+      <label class="field"><span>College email</span>
+        <input type="email" name="email" autocomplete="email" required></label>
+      <label class="field"><span>Password</span>
+        <input type="password" name="password" autocomplete="current-password" required minlength="8"></label>
+      <p class="hint hidden" id="pw-hint">At least 8 characters, with a letter and a number.</p>
+      <div id="auth-error" class="notice error hidden" role="alert"></div>
+      <button class="btn" type="submit" id="submit-btn">Log in</button>
+      <p class="small muted" style="margin-top:1rem">Your messages stay on this computer. Each account only ever sees its own groups.</p>
+    </form>
+  </section>
+</div>
+<script src="/js/api.js"></script>
+<script src="/js/auth.js"></script>
+</body>
+</html>

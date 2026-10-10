@@ -1,0 +1,13 @@
+{
+  "state": "ready",
+  "detail": "Connected (simulated)",
+  "updated": "2026-10-10T11:08:07.651723+00:00",
+  "account": {
+    "name": "Demo Student",
+    "number": "\u2022\u2022\u2022\u2022\u2022\u20224321",
+    "platform": "simulated",
+    "about": "Hey there! I am using WhatsApp."
+  },
+  "pid": 17328,
+  "simulated": true
+}
